@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -13,6 +14,7 @@ namespace WebApiService2.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            Debug.WriteLine("WebApiService2 GET api/values");
             return new string[] { "WebApiService2 - value1", "WebApiService2 - value2" };
         }
 
