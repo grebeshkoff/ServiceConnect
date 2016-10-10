@@ -14,7 +14,7 @@ namespace WebApiService1.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            Debug.WriteLine("WebApiService 1 GET api/values");
+            Debug.WriteLine("WebApiService1 GET api/values");
             return new string[] { "WebApiService1 - value1", "WebApiService1 - value2" };
         }
 
